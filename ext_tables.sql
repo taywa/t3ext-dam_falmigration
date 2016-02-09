@@ -29,3 +29,12 @@ CREATE TABLE tx_dam (
 	KEY deletedRecords (uid, deleted),
 	KEY missingFiles (_missingfile)
 );
+
+#
+# Table structure for table 'sys_file_metadata'
+# add fergotten copyright field for sys_file_metadata in TYPO3 7LTS
+CREATE TABLE sys_file_metadata (
+        copyright varchar(255) DEFAULT '' NOT NULL,
+}
+
+
